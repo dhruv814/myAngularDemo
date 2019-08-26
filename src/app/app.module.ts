@@ -11,6 +11,8 @@ import { MomentDemoComponent } from './moment-demo/moment-demo.component';
 import { DashboardComponent } from './admin/components/dashboard/dashboard.component';
 import { BaseModule } from './base/base.module';
 import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { SigninComponent } from './signin/signin.component';
     HeaderbarComponent,
     FooterComponent,
     MomentDemoComponent,
-    SigninComponent
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BaseModule
+    BaseModule,
+    ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
