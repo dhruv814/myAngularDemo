@@ -19,6 +19,8 @@ export class SidebarComponent implements OnInit {
 
   logout(){
     this.loginService.setLogin(false);
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('isLoggedIn');
     this.router.navigate(["/signin"]);
   }
 

@@ -11,6 +11,7 @@
     <input formControlName='password' type="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
     <div *ngIf="f.password.errors" class="error">
         <div *ngIf="submitted && f.password.errors.required">Password is required</div>
+        <div #err></div>
     </div><br />
     <input type="submit" value="Submit" />&nbsp;&nbsp;
     <input type="reset" value="Reset" />

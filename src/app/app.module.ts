@@ -13,6 +13,7 @@ import { BaseModule } from './base/base.module';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BaseModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

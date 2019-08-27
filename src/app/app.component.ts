@@ -19,7 +19,6 @@ export class AppComponent {
   
 
   private lastChild(route: ActivatedRouteSnapshot): ActivatedRouteSnapshot {
-    console.log(route);
     if (route.firstChild) {
       return this.lastChild(route.firstChild);
     } else {
