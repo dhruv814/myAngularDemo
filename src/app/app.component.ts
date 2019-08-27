@@ -11,9 +11,12 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'my-demo-app';
-  constructor(private route: ActivatedRoute, private titleService: Title, private router: Router) { }
+  constructor(private route: ActivatedRoute, private titleService: Title, private router: Router) {
+  }
   sidebar = true;
   navbar = true;
+
+  
 
   private lastChild(route: ActivatedRouteSnapshot): ActivatedRouteSnapshot {
     console.log(route);

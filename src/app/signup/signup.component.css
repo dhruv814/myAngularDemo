@@ -10,3 +10,10 @@ h1{
     font-size:1em;
     color: red;
 }
+
+ul{
+    margin-top: 4em;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+

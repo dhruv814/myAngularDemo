@@ -1,6 +1,7 @@
 <div>
   <button class="slidebar-item" routerLink="pipes">Pipe Demo</button><br/><br>
   <button class="slidebar-item" routerLink="momentDemo">Display date</button><br><br>
-  <button class="slidebar-item" routerLink="signin">Sign in</button><br><br>
+  <button *ngIf="!loginService.isLoggedIn" class="slidebar-item" routerLink="signin">Sign in</button><br><br>
+  <button *ngIf="loginService.isLoggedIn" class="slidebar-item" (click)="logout()">Log out</button><br><br>
   <button class="slidebar-item" routerLink="signup">Sign up</button>
 </div>

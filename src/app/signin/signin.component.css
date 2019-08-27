@@ -5,3 +5,6 @@ form{
 h1{
     font-size: 3.5em;
 }
+.error{
+    color:red;
+}
